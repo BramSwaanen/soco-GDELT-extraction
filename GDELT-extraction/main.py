@@ -12,22 +12,27 @@ with open("headers.csv",'r') as file:
     header_list = header_string.split(",")
     header_list[-1] = header_list[-1][:-1]
 
-print("header_list:", header_list)
+# print("header_list:", header_list)
 
+d = {}
 # Loop over all data files in ./data
 for path in os.listdir("./data"):
-    print("********************")
-    print(path)
+    # print("********************")
+    # print(path)
     date,_ = path.split(".")
     # Save in a dataframe with header_list headers WORKS
     df = pd.read_csv(f"./data/{path}",names=header_list,sep="\t")
-    print(df)
-    # Extract relevant articles based on newspaper and ai_regex queries
+    # print(df)
+    # Extract relevant rows based on newspaper and ai_regex queries WORKS
     df = df[df.SOURCEURL.str.contains(newspaper)]
-    print(df)
-    print(df.SOURCEURL)
+    # print(df)
+    # print(df.SOURCEURL)
     df1 = df[df.SOURCEURL.str.contains(ai_regex)]
-    print("df1:", df1.iloc[0].SOURCEURL)
-    # TODO: get unique entries for SOURCEURL
-
+    # print("df1:", df1.iloc[0].SOURCEURL)
+    # Save the unique found urls in the dictionary under the current date
+    unique_urls = df1.SOURCEURL.unique()
+    # TODO: loop over unique urls and obtain necessary information right away
+    # (see model on the back of LSA's coursework 3)
+    d[date] = unique_urls
     
+print(d)
