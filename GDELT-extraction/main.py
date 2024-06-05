@@ -26,7 +26,7 @@ def extract_content(url:str):
     mainText = contents[0]['articleBody']
     return headline, mainText
 
-newspaper_regex = "https://www.(foxnews|cnn|cbsnews|nbcnews)" # The pipeline has been tested for all these sites
+newspaper_regex = "https://www.(?:foxnews|cnn|cbsnews|nbcnews)" # The pipeline has been tested for all these sites
 ai_regex = "-ai-|artificial-intelligence"
 
 # Extract the header row from headers.csv WORKS
@@ -44,7 +44,7 @@ for path in os.listdir("./data"):
     # print(path)
     date,_ = path.split(".")
     # Save in a dataframe with header_list headers WORKS
-    df = pd.read_csv(f"./data/{path}",names=header_list,sep="\t")
+    df = pd.read_csv(f"./data/{path}",names=header_list,sep="\t",low_memory=False)
     # print(df)
     # Extract relevant rows based on newspaper_regex and ai_regex queries WORKS
     df = df[df.SOURCEURL.str.contains(newspaper_regex)]
@@ -78,4 +78,4 @@ for path in os.listdir("./data"):
     # in a dictionar under the same key with an index (option 2). I personally think option 2 is
     # better.
 
-print(len(d["20240429"]))
+print(len(d["20240430"]))
