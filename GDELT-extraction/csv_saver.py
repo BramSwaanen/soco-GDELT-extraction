@@ -36,7 +36,11 @@ d = {}
 articles_data = []  # List to collect all articles data for CSV export
 
 # Loop over all data files in ./data
+len_dir = len(os.listdir("./data"))
+counter = 0
 for path in os.listdir("./data"):
+    counter += 1
+    print(f"file {counter} of {len_dir}",end="\r")
     date, _ = path.split(".")
     df = pd.read_csv(f"./data/{path}", names=header_list, sep="\t", low_memory=False)
     df = df[df.SOURCEURL.str.contains(newspaper_regex)]
