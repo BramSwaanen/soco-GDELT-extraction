@@ -24,7 +24,7 @@ def extract_content(url:str):
     return headline, mainText
 
 newspaper_regex = "https://www.(?:foxnews|cnn|cbsnews|nbcnews)"
-ai_regex = "-ai-|artificial-intelligence|gpt|natural-language-processing|chatbot"
+ai_regex = "-ai-|artificial-intelligence|gpt|natural-language-processing|chatbot|speech-recognition|robot"
 
 # Extract the header row from headers.csv
 with open("headers.csv",'r') as file:
