@@ -49,27 +49,27 @@ counter = 0
 for path in os.listdir(data_path):
     counter += 1
     print(f"file {counter} of {len_dir}",end="\r")
-    if counter > 39 and counter < 139:
-        date, _ = path.split(".")
-        print("data_path:", data_path)
-        print("path:", path)
-        df = pd.read_csv(f"{data_path}{path}", names=header_list, sep="\t", low_memory=False)
-        df = df[df.SOURCEURL.str.contains(newspaper_regex)]
-        df1 = df[df.SOURCEURL.str.contains(ai_regex)]
-        unique_urls = df1.SOURCEURL.unique()
-        
-        for index, url in enumerate(unique_urls):
-            headline, mainText = extract_content(url)
-            if headline:
-                matches = re.match(newspaper_regex, url)
-                newsPaper = matches.group()[12:]  # Extracting newspaper name from the URL
-                article_info = {
-                    "Date": date,
-                    "NewsPaper": newsPaper,
-                    "Headline": headline,
-                    "MainText": mainText
-                }
-                articles_data.append(article_info)  # Append each article's data to the list
+    # if counter > 39 and counter < 139:
+    date, _ = path.split(".")
+    print("data_path:", data_path)
+    print("path:", path)
+    df = pd.read_csv(f"{data_path}{path}", names=header_list, sep="\t", low_memory=False)
+    df = df[df.SOURCEURL.str.contains(newspaper_regex)]
+    df1 = df[df.SOURCEURL.str.contains(ai_regex)]
+    unique_urls = df1.SOURCEURL.unique()
+    
+    for index, url in enumerate(unique_urls):
+        headline, mainText = extract_content(url)
+        if headline:
+            matches = re.match(newspaper_regex, url)
+            newsPaper = matches.group()[12:]  # Extracting newspaper name from the URL
+            article_info = {
+                "Date": date,
+                "NewsPaper": newsPaper,
+                "Headline": headline,
+                "MainText": mainText
+            }
+            articles_data.append(article_info)  # Append each article's data to the list
 
 # Creating DataFrame from the list of article data
 articles_df = pd.DataFrame(articles_data)
