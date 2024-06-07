@@ -7,3 +7,39 @@ HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceed
 Error loading https://www.cnnphilippines.com/business/2023/9/21/ptt-chatgpt.html:
 HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /business/2023/9/21/ptt-chatgpt.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
 
+Error loading https://www.cnnphilippines.com:443/business/2022/4/29/baidu-ponyai-self-driving-robotaxi-china.html:
+HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /business/2022/4/29/baidu-ponyai-self-driving-robotaxi-china.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
+
+Error loading https://www.cnnphilippines.com/business/2023/9/21/ptt-chatgpt.html:
+HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /business/2023/9/21/ptt-chatgpt.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
+
+Error loading https://www.foxnews.com/lifestyle/how-ai-machine-learning-revealing-food-waste-commercial-kitchens-restaurants-real-time.print:
+list index out of range
+
+Error loading https://www.foxnews.com/tech/personalized-chatbot-tutors-could-replace-teachers-traditional-education-ai-expert.print:
+list index out of range
+
+Error loading https://www.cnnphilippines.com/news/2023/6/15/dict-ai-regulation-workplace.html:
+HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /news/2023/6/15/dict-ai-regulation-workplace.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
+
+Error loading https://www.cnnphilippines.com/news/2023/7/23/agency-ai-use.html:
+HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /news/2023/7/23/agency-ai-use.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
+
+Error loading https://www.cbsnews.com/atlanta/news/42-of-ceos-say-ai-could-destroy-humanity-in-five-to-ten-years/:
+list index out of range
+
+Error loading https://www.cnnphilippines.com:443/news/2022/6/8/Ai-ai-Delas-Alas-Darryl-Yap-persona-non-grata-Quezon-City.html:
+HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /news/2022/6/8/Ai-ai-Delas-Alas-Darryl-Yap-persona-non-grata-Quezon-City.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
+
+Error loading https://www.foxnews.com/politics/senators-classified-ai-briefing-confident-wary-china-threat.print:
+list index out of range
+
+Error loading https://www.cnnphilippines.com:443/entertainment/2022/6/9/Ai-ai-Delas-Alas-Quezon-City-persona-non-grata.html:
+HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /entertainment/2022/6/9/Ai-ai-Delas-Alas-Quezon-City-persona-non-grata.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
+
+Error loading https://www.cnnphilippines.com/news/2023/11/16/marcos-ai-powered-weather-forecasting-system-apec.html:
+HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /news/2023/11/16/marcos-ai-powered-weather-forecasting-system-apec.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
+
+Error loading https://www.cnnphilippines.com/news/2023/11/16/marcos-ai-apec-meeting.html:
+HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /news/2023/11/16/marcos-ai-apec-meeting.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
+
