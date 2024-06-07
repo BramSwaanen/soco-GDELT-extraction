@@ -21,10 +21,11 @@ print(data.head())
 
 # Group by Date and NewsPaper and calculate mean of Sentiment_Score
 grouped_data = data.groupby(['Month', 'NewsPaper'])['Sentiment_Score'].mean().unstack()
+rolling_avg = grouped_data.rolling(window=6).mean()
 
 # Plotting
 plt.figure(figsize=(14, 7))
-sns.lineplot(data=grouped_data, dashes=False)
+sns.lineplot(data=rolling_avg, dashes=False)
 plt.title('Average Sentiment Score Over Time by Newspaper')
 plt.ylabel('Average Sentiment Score')
 plt.xlabel('Date')
