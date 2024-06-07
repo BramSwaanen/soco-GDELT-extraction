@@ -32,7 +32,7 @@ def extract_content(url:str):
 
 newspaper_regex = "https://www.(?:foxnews|cnn|cbsnews|nbcnews)"
 ai_regex = "-ai-|artificial-intelligence|gpt|natural-language-processing|chatbot|speech-recognition|robot"
-data_path = "../../practice-data/extracted/"
+data_path = "./data"
 
 # Extract the header row from headers.csv
 with open("headers.csv",'r') as file:
