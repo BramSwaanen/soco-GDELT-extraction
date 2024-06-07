@@ -31,7 +31,7 @@ def extract_content(url:str):
         return None, None
 
 newspaper_regex = "https://www.(?:foxnews|cnn|cbsnews|nbcnews)"
-ai_regex = "-ai-|artificial-intelligence|gpt|natural-language-processing|chatbot|speech-recognition|robot"
+ai_regex = "-ai-|artificial-intelligence|gpt|natural-language-processing|chatbot|speech-recognition|robot|china|korea|english"
 data_path = "./data"
 
 # Extract the header row from headers.csv
@@ -53,7 +53,8 @@ for path in os.listdir(data_path):
     date, _ = path.split(".")
     print("data_path:", data_path)
     print("path:", path)
-    df = pd.read_csv(f"{data_path}{path}", names=header_list, sep="\t", low_memory=False)
+    df = pd.read_csv(f"{data_path}/{path}", names=header_list, sep="\t", low_memory=False)
+
     df = df[df.SOURCEURL.str.contains(newspaper_regex)]
     df1 = df[df.SOURCEURL.str.contains(ai_regex)]
     unique_urls = df1.SOURCEURL.unique()
