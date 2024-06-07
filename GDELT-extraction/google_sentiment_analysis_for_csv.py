@@ -44,4 +44,4 @@ def analyze_sentiment_in_csv(csv_file: str, output_csv: str) -> None:
     print(f"Sentiment analysis completed. Results saved to {output_csv}")
 
 # Example usage
-analyze_sentiment_in_csv('extracted_articles.csv', 'Google_output_with_sentiment.csv')
+analyze_sentiment_in_csv('outpu_cut_data.csv', 'Google_output_with_sentiment.csv')

@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
+import matplotlib.dates as mdates
 
 
 file_path = "Google_output_with_sentiment.csv"  
@@ -19,6 +20,7 @@ plt.title('Average Sentiment Score Over Time by Newspaper')
 plt.ylabel('Average Sentiment Score')
 plt.xlabel('Date')
 plt.xticks(rotation=45)
+plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%m-%d'))
 plt.legend(title='Newspaper', title_fontsize='13', fontsize='11', loc='upper right')
 plt.grid(True)
 plt.tight_layout()

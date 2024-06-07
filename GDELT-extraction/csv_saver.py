@@ -51,7 +51,7 @@ for path in os.listdir(data_path):
     print(f"file {counter} of {len_dir}",end="\r")
     date, _ = path.split(".")
     try:
-        df = pd.read_csv(f"{data_path}{path}", names=header_list, sep="\t", low_memory=False)
+        df = pd.read_csv(f"{data_path}/{path}", names=header_list, sep="\t", low_memory=False)
     except Exception as message:
         with open("./errors/loading-errors.txt","a") as file:
             file.write(f"Error reading {path}:\n{message}\n\n")
