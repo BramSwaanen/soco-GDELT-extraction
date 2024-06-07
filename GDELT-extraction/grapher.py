@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.dates as mdates
 
 
-file_path = "./saved-csvs/sentiment_by_textlob.csv"  
+file_path = "Google_output_with_sentiment.csv"  
 data = pd.read_csv(file_path)
 
 # Get 'Month' and 'Year' columns
@@ -20,7 +20,7 @@ data['Year'] = pd.to_datetime(data['Year'], format='%Y')
 print(data.head())
 
 # Group by Date and NewsPaper and calculate mean of Sentiment_Score
-grouped_data = data.groupby(['Month', 'NewsPaper'])['VADER_Sentiment'].mean().unstack()
+grouped_data = data.groupby(['Month', 'NewsPaper'])['Sentiment_Score'].mean().unstack()
 
 # Plotting
 plt.figure(figsize=(14, 7))
