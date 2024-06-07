@@ -3,14 +3,23 @@ import seaborn as sns
 import pandas as pd
 
 
-file_path = "Google_output_with_sentiment.csv"  
+file_path = "./saved-csvs/sentiment_by_textlob.csv"  
 data = pd.read_csv(file_path)
 
-# Convert 'Date' to datetime format
+# Get 'Month' and 'Year' columns
+data.insert(0,'Month',[int(str(i)[:6]) for i in data.Date])
+data.insert(0,'Year',[int(str(i)[:4]) for i in data.Date])
+print(data.head())
+
+# Convert date columns to datetime format
 data['Date'] = pd.to_datetime(data['Date'], format='%Y%m%d')
+data['Month'] = pd.to_datetime(data['Month'], format='%Y%m')
+data['Year'] = pd.to_datetime(data['Year'], format='%Y')
+
+print(data.head())
 
 # Group by Date and NewsPaper and calculate mean of Sentiment_Score
-grouped_data = data.groupby(['Date', 'NewsPaper'])['Sentiment_Score'].mean().unstack()
+grouped_data = data.groupby(['Month', 'NewsPaper'])['VADER_Sentiment'].mean().unstack()
 
 # Plotting
 plt.figure(figsize=(14, 7))
