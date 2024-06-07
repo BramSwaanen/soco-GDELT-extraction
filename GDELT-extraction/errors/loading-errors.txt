@@ -1,15 +1,9 @@
-https://www.cnnphilippines.com:443/business/2022/4/29/baidu-ponyai-self-driving-robotaxi-china.html:
+Error loading https://www.cnnphilippines.com:443/business/2022/4/29/baidu-ponyai-self-driving-robotaxi-china.html:
 HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /business/2022/4/29/baidu-ponyai-self-driving-robotaxi-china.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
 
-https://www.cnnphilippines.com:443/business/2022/4/29/baidu-ponyai-self-driving-robotaxi-china.html:
+Error loading https://www.cnnphilippines.com:443/business/2022/4/29/baidu-ponyai-self-driving-robotaxi-china.html:
 HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /business/2022/4/29/baidu-ponyai-self-driving-robotaxi-china.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
 
-https://www.cnnphilippines.com:443/business/2022/4/29/baidu-ponyai-self-driving-robotaxi-china.html:
-HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /business/2022/4/29/baidu-ponyai-self-driving-robotaxi-china.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
-
-https://www.cnnphilippines.com:443/business/2022/4/29/baidu-ponyai-self-driving-robotaxi-china.html:
-HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /business/2022/4/29/baidu-ponyai-self-driving-robotaxi-china.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
-
-https://www.cnnphilippines.com/business/2023/9/21/ptt-chatgpt.html:
+Error loading https://www.cnnphilippines.com/business/2023/9/21/ptt-chatgpt.html:
 HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /business/2023/9/21/ptt-chatgpt.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
 

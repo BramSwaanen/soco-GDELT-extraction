@@ -27,12 +27,12 @@ def extract_content(url:str):
         if not os.path.exists("./errors"):
             os.mkdir("./errors")
         with open(f"./errors/loading-errors.txt","a") as file:
-            file.write(f"{url}:\n{str(message)}\n\n")
+            file.write(f"Error loading {url}:\n{str(message)}\n\n")
         return None, None
 
 newspaper_regex = "https://www.(?:foxnews|cnn|cbsnews|nbcnews)"
 ai_regex = "-ai-|artificial-intelligence|gpt|natural-language-processing|chatbot|speech-recognition|robot"
-data_path = "./data"
+data_path = "../../practice-data/extracted/"
 
 # Extract the header row from headers.csv
 with open("headers.csv",'r') as file:
@@ -49,15 +49,16 @@ counter = 0
 for path in os.listdir(data_path):
     counter += 1
     print(f"file {counter} of {len_dir}",end="\r")
-    # if counter > 39 and counter < 139:
     date, _ = path.split(".")
-    print("data_path:", data_path)
-    print("path:", path)
-    df = pd.read_csv(f"{data_path}{path}", names=header_list, sep="\t", low_memory=False)
+    try:
+        df = pd.read_csv(f"{data_path}{path}", names=header_list, sep="\t", low_memory=False)
+    except Exception as message:
+        with open("./errors/loading-errors.txt","a") as file:
+            file.write(f"Error reading {path}:\n{message}\n\n")
     df = df[df.SOURCEURL.str.contains(newspaper_regex)]
     df1 = df[df.SOURCEURL.str.contains(ai_regex)]
     unique_urls = df1.SOURCEURL.unique()
-    
+
     for index, url in enumerate(unique_urls):
         headline, mainText = extract_content(url)
         if headline:

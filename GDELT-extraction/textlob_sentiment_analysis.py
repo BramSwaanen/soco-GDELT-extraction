@@ -4,6 +4,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 # Load CSV file
 df = pd.read_csv('extracted_articles.csv')
+print(df.head())
 
 # Initialize VADER analyzer
 analyzer = SentimentIntensityAnalyzer()

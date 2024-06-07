@@ -10,7 +10,7 @@ def analyze_sentiment_in_csv(csv_file: str, output_csv: str) -> None:
       output_target: Path to the output CSV file to save sentiment analysis results merged with the original data.
     """
     # Load data
-    df = pd.read_csv(csv_file)
+    df = pd.read_csv(csv_file) 
     
     # Initialize the client for Google Natural Language API
     client = language_v2.LanguageServiceClient()
