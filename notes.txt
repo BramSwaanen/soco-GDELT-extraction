@@ -1,7 +1,0 @@
-the research question is too broad; perhaps limit it to an analysis of the sentiment of all news sources in one country; limit it anyhow;
-basically it boils down to removing GDELT completely.
-
-Question to Almila:
-Would a lot of these problems be mitigated by removing GDELT altogether?
-
-On May 28 from 0930-1300 I looked into the possibility of article mining for USA's news sites. I now know how to extract the relevant links from the search pages and how to extract the relevant article content from the obtained websites. However, this process of extraction varies per news provider. I estimate that it is possible to do this extraction for about 4 randomly selected news web pages given the time constraints we have for this project.
