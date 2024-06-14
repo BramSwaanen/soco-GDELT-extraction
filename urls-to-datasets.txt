@@ -1,0 +1,4 @@
+- https://www.kaggle.com/datasets/shanegerami/ai-vs-human-text
+- https://www.kaggle.com/datasets/gianinamariapetrascu/survey-on-students-perceptions-of-ai-in-education
+- 
+

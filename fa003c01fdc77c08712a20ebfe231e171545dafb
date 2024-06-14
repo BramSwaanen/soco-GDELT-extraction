@@ -1,0 +1,197 @@
+[33mcommit 3ec459f16fa04b0c03dfe6777a3ff52288d2dab7[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 97a2dc4 fa003c0
+Author: disen-hu <1515092118@qq.com>
+Date:   Sat Jun 15 00:21:47 2024 +0200
+
+    merge
+
+[33mcommit 97a2dc483a8cec490bdb3f28334463418ad67118[m
+Author: disen-hu <1515092118@qq.com>
+Date:   Sat Jun 15 00:15:05 2024 +0200
+
+    add rule based sentiment analyisis
+
+[33mcommit fa003c01fdc77c08712a20ebfe231e171545dafb[m
+Author: BramSwaanen <117469447+BramSwaanen@users.noreply.github.com>
+Date:   Mon Jun 10 20:22:59 2024 +0200
+
+    Update README.md
+
+[33mcommit f8f1a87513fadbfde71ccac0b5580c20020ba083[m
+Author: BramSwaanen <117469447+BramSwaanen@users.noreply.github.com>
+Date:   Mon Jun 10 20:19:50 2024 +0200
+
+    Create README.md
+
+[33mcommit 97fc707295627ba9af7827311caae1ad075733b1[m
+Author: BramSwaanen <bramswaanen@gmail.com>
+Date:   Mon Jun 10 20:15:19 2024 +0200
+
+    Cleaned up repo
+
+[33mcommit 0460964133b449518bb869a4b96398ece2c7233b[m
+Author: BramSwaanen <bramswaanen@gmail.com>
+Date:   Mon Jun 10 16:33:02 2024 +0200
+
+    Create google-analysis-with-arrow.png
+
+[33mcommit cb34330fa58226328afd024b86fac520ce3da7db[m
+Author: disen-hu <1515092118@qq.com>
+Date:   Sat Jun 8 13:20:49 2024 +0200
+
+    add year describe in grapher.py
+
+[33mcommit ca809267c2235f7175c0da55a1c11b6012d74c29[m
+Author: BramSwaanen <bramswaanen@gmail.com>
+Date:   Fri Jun 7 15:34:05 2024 +0200
+
+    Add scatter to grapher.py
+
+[33mcommit 92cd658f2cfc4b3119ba03d1c03732abd579b2e6[m
+Author: BramSwaanen <bramswaanen@gmail.com>
+Date:   Fri Jun 7 15:14:33 2024 +0200
+
+    Added rolling average to grapher.py
+
+[33mcommit 5382fe914e73c6709a059d7d6e3b3d66e3e890b9[m
+Author: disen-hu <1515092118@qq.com>
+Date:   Fri Jun 7 14:39:14 2024 +0200
+
+    grapher
+
+[33mcommit a4c4898300ab559f6fd8f72f5a20c8760d390310[m
+Merge: efe5ada 4564608
+Author: disen-hu <1515092118@qq.com>
+Date:   Fri Jun 7 14:35:20 2024 +0200
+
+    Merge branch 'master' of https://github.com/BramSwaanen/soco-webscraping
+
+[33mcommit efe5adacb1e39448f9714c1d8252541fab05570e[m
+Author: disen-hu <1515092118@qq.com>
+Date:   Fri Jun 7 14:34:58 2024 +0200
+
+    add google sentiment analysis result and add cut_data.py to cut maximum 500 tokens limits in google NLP API
+
+[33mcommit 45646089488c9d80cbe8ee52d27a1fee2b503391[m
+Author: BramSwaanen <bramswaanen@gmail.com>
+Date:   Fri Jun 7 14:28:35 2024 +0200
+
+    Update grapher.py
+
+[33mcommit 2c3e7cbbd28f35429ed42d8e895e7bca70375611[m
+Author: BramSwaanen <bramswaanen@gmail.com>
+Date:   Fri Jun 7 13:48:13 2024 +0200
+
+    Extracted 2022,23 and 24
+
+[33mcommit b8819581bcc7ea21965ff109984abf7c723fcfe8[m
+Merge: fa708af 1ac6774
+Author: BramSwaanen <bramswaanen@gmail.com>
+Date:   Fri Jun 7 13:06:50 2024 +0200
+
+    Merge branch 'master' of https://github.com/BramSwaanen/soco-webscraping
+
+[33mcommit fa708af5420c23a0ee119dd2a396acd56ce111d6[m
+Author: BramSwaanen <bramswaanen@gmail.com>
+Date:   Fri Jun 7 13:05:21 2024 +0200
+
+    Exceptions log added to csv_saver.py
+
+[33mcommit 1ac6774cdc3b6dcb08ceb8d865cec8b05e240fe4[m
+Author: disen-hu <1515092118@qq.com>
+Date:   Fri Jun 7 13:00:56 2024 +0200
+
+    add grapher function
+
+[33mcommit a928ff518b41a08aecbea7b9078dc83edc10d7a6[m
+Author: BramSwaanen <bramswaanen@gmail.com>
+Date:   Fri Jun 7 12:20:43 2024 +0200
+
+    removed debug stuff
+
+[33mcommit 6b4794b451ad3e190f5b60b050cb5ba53a6bcf97[m
+Author: BramSwaanen <bramswaanen@gmail.com>
+Date:   Fri Jun 7 12:20:13 2024 +0200
+
+    Added exceptions to save_csv.py
+
+[33mcommit 4c7fd940251df99fcec4652f16867f1657f3a241[m
+Author: BramSwaanen <bramswaanen@gmail.com>
+Date:   Thu Jun 6 14:22:58 2024 +0200
+
+    Added counter to csv_saver.py
+
+[33mcommit 325b5077d8f667123b7da719f83be82166bc5ca5[m
+Author: BramSwaanen <bramswaanen@gmail.com>
+Date:   Thu Jun 6 14:20:01 2024 +0200
+
+    Update csv_saver.py
+
+[33mcommit 88952e764a598368e98da96856a9022c971c72dd[m
+Author: disen-hu <1515092118@qq.com>
+Date:   Wed Jun 5 19:03:26 2024 +0200
+
+    little bug fixed
+
+[33mcommit 82ccd7ee559c8270cbaeec419974fa6bb898ab9d[m
+Author: disen-hu <1515092118@qq.com>
+Date:   Wed Jun 5 18:56:11 2024 +0200
+
+    add regular expression word
+
+[33mcommit 89a3a37c6e57c39e676ef79e0f559dc4ae5ac9f4[m
+Author: disen-hu <1515092118@qq.com>
+Date:   Wed Jun 5 10:51:10 2024 +0200
+
+    add sentiment analysis by Google NLP API and textblob
+
+[33mcommit 0ff6b1c608cc6748b361fb54f2f45ff469f3e533[m
+Author: BramSwaanen <bramswaanen@gmail.com>
+Date:   Tue Jun 4 14:16:17 2024 +0200
+
+    Update webscraping-nos.ipynb
+
+[33mcommit 6a5b2fab8915963e488af3ff94fd6c187f8b55b4[m
+Author: BramSwaanen <bramswaanen@gmail.com>
+Date:   Tue Jun 4 14:15:26 2024 +0200
+
+    Added content extraction to main.py
+
+[33mcommit 7dce1bee1fec7630652b140600dbaa8590d30f3f[m
+Author: BramSwaanen <bramswaanen@gmail.com>
+Date:   Tue Jun 4 12:23:00 2024 +0200
+
+    Extract unique urls in main.py
+
+[33mcommit 52785f7ad2feb012b5aab73b20134564236335a7[m
+Author: BramSwaanen <bramswaanen@gmail.com>
+Date:   Tue Jun 4 12:12:49 2024 +0200
+
+    GDELT-extraction
+    
+    - extract df from csv-file
+    - extract relevant rows from df
+
+[33mcommit cd04f00d0103e0cf20ed5a84fc181e03dab79ee2[m
+Author: BramSwaanen <bramswaanen@gmail.com>
+Date:   Tue Jun 4 10:50:51 2024 +0200
+
+    Create main.py
+
+[33mcommit 115aa7ce391d0ca6ed3e689df9b66b782ecc41cd[m
+Author: BramSwaanen <bramswaanen@gmail.com>
+Date:   Tue Jun 4 10:47:18 2024 +0200
+
+    Some prep
+
+[33mcommit da1043cb5828e95209c0b70f2af8715c95a65d39[m
+Author: BramSwaanen <bramswaanen@gmail.com>
+Date:   Thu May 30 12:42:52 2024 +0200
+
+    Yes commit
+
+[33mcommit 9155e1b2e16c7ae3405701a38e24df289f6c0df5[m
+Author: BramSwaanen <bramswaanen@gmail.com>
+Date:   Thu May 30 12:40:49 2024 +0200
+
+    Made
