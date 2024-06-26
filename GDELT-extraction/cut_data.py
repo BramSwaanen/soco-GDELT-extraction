@@ -8,7 +8,7 @@ def truncate_text(text, max_tokens=499):
     return text
 
 # 加载数据
-file_path = 'saved-csvs/extracted_articles.csv'  # 替换成实际文件路径
+file_path = 'saved-files/extracted_articles_no_robots.csv'  # 替换成实际文件路径
 data = pd.read_csv(file_path)
 
 # 应用截断函数
