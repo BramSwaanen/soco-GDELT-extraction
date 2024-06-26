@@ -18,7 +18,8 @@ def analyze_sentiment_in_csv(csv_file: str, output_csv: str) -> None:
     # Analyze sentiment for each row and append results
     sentiment_scores = []
     sentiment_magnitudes = []
-    for text_content in df['MainText']:  # Assumes 'MainText' column has the text content
+    for i,text_content in enumerate(df['MainText']):  # Assumes 'MainText' column has the text content
+        print(f"Text {i} of {len(df['MainText'])}")
         document = {
             "content": text_content,
             "type_": language_v2.Document.Type.PLAIN_TEXT,
