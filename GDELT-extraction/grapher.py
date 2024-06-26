@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.dates as mdates
 
 
-file_path = "saved-files/Google_output_with_sentiment_no_robots.csv"  
+file_path = "saved-files/more_dates_Google_output_with_sentiment_no_robots.csv"  
 data = pd.read_csv(file_path)
 
 # Get 'Month' and 'Year' columns
@@ -27,7 +27,7 @@ month_rolling_avg = month_grouped_data.rolling(window=6).mean()
 # Plotting
 plt.figure(figsize=(14, 7))
 sns.scatterplot(data=date_grouped_data)
-sns.lineplot(data=month_grouped_data, dashes=False)
+sns.lineplot(data=month_rolling_avg, dashes=False)
 plt.title('Average Sentiment Score Over Time by Newspaper')
 plt.ylabel('Average Sentiment Score')
 plt.xlabel('Date')
