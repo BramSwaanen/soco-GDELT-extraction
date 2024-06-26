@@ -1,17 +1,29 @@
-Error loading https://www.cnnphilippines.com:443/business/2022/4/29/baidu-ponyai-self-driving-robotaxi-china.html:
-HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /business/2022/4/29/baidu-ponyai-self-driving-robotaxi-china.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
+Error loading https://www.nbcnews.com/tech/tech-news/chatgpt-ai-chatbot-viral-rcna59628:
+'headline'
 
-Error loading https://www.cnnphilippines.com:443/business/2022/4/29/baidu-ponyai-self-driving-robotaxi-china.html:
-HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /business/2022/4/29/baidu-ponyai-self-driving-robotaxi-china.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
+Error loading https://www.nbcnews.com/tech/tech-news/chatgpt-ai-consciousness-rcna71777:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/tech-news/job-boards-show-employers-hiring-roles-linked-chatgpt-ai-tools-rcna74023:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/tech-news/google-says-gemini-ai-glitches-product-effort-address-traps-rcna140243:
+'headline'
 
 Error loading https://www.cnnphilippines.com/business/2023/9/21/ptt-chatgpt.html:
 HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /business/2023/9/21/ptt-chatgpt.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
 
-Error loading https://www.cnnphilippines.com:443/business/2022/4/29/baidu-ponyai-self-driving-robotaxi-china.html:
-HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /business/2022/4/29/baidu-ponyai-self-driving-robotaxi-china.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
+Error loading https://www.nbcnews.com/tech/tech-news/judges-england-wales-are-cautious-approval-use-ai-writing-legal-opinio-rcna132824:
+'headline'
 
-Error loading https://www.cnnphilippines.com/business/2023/9/21/ptt-chatgpt.html:
-HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /business/2023/9/21/ptt-chatgpt.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
+Error loading https://www.nbcnews.com/politics/states-turn-attention-regulating-ai-deepfakes-2024-rcna135122:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/tech-news/chatgpt-ai-consciousness-rcna71777:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/tech-news/real-made-ai-europe-wants-label-fights-disinformation-rcna87829:
+'headline'
 
 Error loading https://www.foxnews.com/lifestyle/how-ai-machine-learning-revealing-food-waste-commercial-kitchens-restaurants-real-time.print:
 list index out of range
@@ -19,11 +31,59 @@ list index out of range
 Error loading https://www.foxnews.com/tech/personalized-chatbot-tutors-could-replace-teachers-traditional-education-ai-expert.print:
 list index out of range
 
+Error loading https://www.nbcnews.com/tech/tech-news/new-york-sues-microsoft-chatgpt-maker-openai-copyright-infringement-rcna131289:
+'headline'
+
+Error loading https://www.nbcnews.com/news/us-news/convicted-fugees-rapper-pras-michels-lawyer-used-ai-draft-bungled-clos-rcna120992:
+'headline'
+
+Error loading https://www.nbcnews.com/news/world/beatles-release-final-record-artificial-intelligence-paul-mccartney-rcna88998:
+'headline'
+
+Error loading https://www.nbcnews.com/politics/national-security/china-russia-ai-divide-us-society-undermine-us-elections-power-rcna142880:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/tech-news/vp-harris-meet-ceos-artificial-intelligence-risks-rcna82835:
+'headline'
+
+Error loading https://www.nbcnews.com/politics/congress/chuck-schumer-calls-ai-rules-chatgpt-surges-popularity-rcna79582:
+'headline'
+
 Error loading https://www.cnnphilippines.com/news/2023/6/15/dict-ai-regulation-workplace.html:
 HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /news/2023/6/15/dict-ai-regulation-workplace.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
 
+Error loading https://www.nbcnews.com/politics/2024-election/democratic-operative-admits-commissioning-fake-biden-robocall-used-ai-rcna140402:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/tech-news/google-making-changes-gemini-ai-portrayed-people-color-inaccurately-rcna140007:
+'headline'
+
+Error loading https://www.nbcnews.com/politics/congress/schumer-call-hands-deck-approach-regulating-ai-rcna90193:
+'headline'
+
+Error loading https://www.nbcnews.com/politics/congress/sen-casey-rolls-bills-protect-workers-ai-surveillance-robot-bosses-rcna94652:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/tech-news/nyc-subway-using-ai-track-fare-evasion-rcna93045:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/tech-news/google-says-ai-tools-meant-help-journalists-not-replace-rcna95346:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/tech-news/leaked-google-engineer-memo-warns-big-tech-lose-ai-race-little-guys-rcna83146:
+'headline'
+
 Error loading https://www.cnnphilippines.com/news/2023/7/23/agency-ai-use.html:
 HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /news/2023/7/23/agency-ai-use.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
+
+Error loading https://www.nbcnews.com/tech/security/def-con-ai-village-hacking-chatbots-rcna99678:
+'headline'
+
+Error loading https://www.nbcnews.com/politics/congress/house-leaders-launch-bipartisan-artificial-intelligence-task-force-rcna139538:
+'headline'
+
+Error loading https://www.nbcnews.com/news/world/pandas-artificial-intelligence-ai-technology-identities-chengdu-rcna38844:
+'headline'
 
 Error loading https://www.cbsnews.com/atlanta/news/42-of-ceos-say-ai-could-destroy-humanity-in-five-to-ten-years/:
 list index out of range
@@ -31,11 +91,47 @@ list index out of range
 Error loading https://www.cnnphilippines.com:443/news/2022/6/8/Ai-ai-Delas-Alas-Darryl-Yap-persona-non-grata-Quezon-City.html:
 HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /news/2022/6/8/Ai-ai-Delas-Alas-Darryl-Yap-persona-non-grata-Quezon-City.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
 
+Error loading https://www.nbcnews.com/tech/tech-news/chatgpt-passes-mba-exam-wharton-professor-rcna67036:
+'headline'
+
 Error loading https://www.foxnews.com/politics/senators-classified-ai-briefing-confident-wary-china-threat.print:
 list index out of range
 
+Error loading https://www.nbcnews.com/tech/misinformation/joe-biden-new-hampshire-robocall-fake-voice-deep-ai-primary-rcna135120:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/misinformation/beverly-vista-hills-middle-school-ai-images-deepfakes-rcna140775:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/tech-news/photo-giant-getty-sued-leading-ai-image-maker-now-s-embracing-technolo-rcna117343:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/tech-news/chatgpt-gpt-chat-bot-ai-hitler-historical-figures-open-rcna66531:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/tech-news/chinese-self-driving-car-testing-china-california-pony-ai-waymo-cruise-rcna102787:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/tech-news/artificial-intelligence-pioneer-leaves-google-warns-technologys-future-rcna82242:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/tech-news/google-joins-ai-watermarking-coalition-deepfakes-hit-mainstream-tech-p-rcna137368:
+'headline'
+
 Error loading https://www.cnnphilippines.com:443/entertainment/2022/6/9/Ai-ai-Delas-Alas-Quezon-City-persona-non-grata.html:
 HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /entertainment/2022/6/9/Ai-ai-Delas-Alas-Quezon-City-persona-non-grata.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
+
+Error loading https://www.nbcnews.com/news/world/secrets-ancient-herculaneum-scroll-deciphered-ai-rcna137960:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/internet/kate-middleton-photo-ai-image-photoshop-edit-rcna142799:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/tech-news/microsoft-google-meta-pledge-action-ai-election-risks-rcna138909:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/internet/viral-eyes-rafah-image-inspires-wave-ai-generated-instagram-posts-isra-rcna154555:
+'headline'
 
 Error loading https://www.cnnphilippines.com/news/2023/11/16/marcos-ai-powered-weather-forecasting-system-apec.html:
 HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /news/2023/11/16/marcos-ai-powered-weather-forecasting-system-apec.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
@@ -43,6 +139,30 @@ HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceed
 Error loading https://www.cnnphilippines.com/news/2023/11/16/marcos-ai-apec-meeting.html:
 HTTPSConnectionPool(host='www.cnnphilippines.com', port=443): Max retries exceeded with url: /news/2023/11/16/marcos-ai-apec-meeting.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1006)')))
 
-Error reading 20240429.CSV:
-[Errno 2] No such file or directory: './data20240429.CSV'
+Error loading https://www.nbcnews.com/news/world/artificial-intelligence-chatbot-chatgpt-rome-italy-vacation-rcna77393:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/tech-news/sam-altman-returns-openai-ceo-infighting-ai-startup-rcna126214:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/tech-news/top-ai-companies-agree-work-together-transparency-safety-white-house-s-rcna95406:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/internet/deepfake-porn-ai-mr-deep-fake-economy-google-visa-mastercard-download-rcna75071:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/chatgpt-texas-college-instructor-backlash-rcna84888:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/tech-news/online-product-reviews-are-becoming-battlefield-modern-ai-rcna94710:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/tech-news/microsoft-infuse-software-ai-google-rivalry-heats-rcna69546:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/tech-news/ftc-says-will-target-ai-violates-civil-rights-deceptive-rcna80264:
+'headline'
+
+Error loading https://www.nbcnews.com/tech/tech-news/sony-music-group-warns-700-companies-using-content-train-ai-rcna152689:
+'headline'
 
