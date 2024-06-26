@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.dates as mdates
 
 
-file_path = "Google_output_with_sentiment.csv"  
+file_path = "saved-files/Google_output_with_sentiment_no_robots.csv"  
 data = pd.read_csv(file_path)
 
 # Get 'Month' and 'Year' columns
