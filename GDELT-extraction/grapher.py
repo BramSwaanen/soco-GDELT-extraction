@@ -27,7 +27,7 @@ month_rolling_avg = month_grouped_data.rolling(window=6).mean()
 # Plotting
 plt.figure(figsize=(14, 7))
 sns.scatterplot(data=date_grouped_data)
-sns.lineplot(data=month_rolling_avg, dashes=False)
+sns.lineplot(data=month_grouped_data, dashes=False)
 plt.title('Average Sentiment Score Over Time by Newspaper')
 plt.ylabel('Average Sentiment Score')
 plt.xlabel('Date')
