@@ -47,7 +47,6 @@ articles_data = []  # List to collect all articles data for CSV export
 len_dir = len(os.listdir(data_path))
 counter = 0
 for path in os.listdir(data_path):
-    print(path)
     counter += 1
     print(f"file {counter} of {len_dir}",end="\r")
     date, _ = path.split(".")

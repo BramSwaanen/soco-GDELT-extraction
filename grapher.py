@@ -10,7 +10,6 @@ data = pd.read_csv(file_path)
 # Get 'Month' and 'Year' columns
 data.insert(0,'Month',[int(str(i)[:6]) for i in data.Date])
 data.insert(0,'Year',[int(str(i)[:4]) for i in data.Date])
-print(data.head())
 
 # Convert date columns to datetime format
 data['Date'] = pd.to_datetime(data['Date'], format='%Y%m%d')
