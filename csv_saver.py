@@ -44,48 +44,45 @@ d = {}
 articles_data = []  # List to collect all articles data for CSV export
 
 # Loop over all data files in data_path
-len_dir = len([i for i in os.listdir(data_path) if re.search(r"^202(0|1)",i)])
+len_dir = len(os.listdir(data_path))
 counter = 0
 for path in os.listdir(data_path):
-    if re.search(r"^202(0|1)",path):
-        counter += 1
-        print(f"file {counter} of {len_dir}",end="\r")
-        date, _ = path.split(".")
-        try:
-            df = pd.read_csv(f"{data_path}/{path}", names=header_list, sep="\t", low_memory=False) # read csv-file
-        except Exception as message:
-            with open("./errors/loading-errors.txt","a") as file:
-                file.write(f"Error reading {path}:\n{message}\n\n")
-        try:
-            df = df[df.SOURCEURL.str.contains(newspaper_regex)] # filter df urls on newspaper_regex
-        except Exception as message:
-            with open("./errors/loading-errors.txt","a") as file:
-                file.write(f"Error reading {path}:\n{message}\n\n")
-        try:
-            df1 = df[df.SOURCEURL.str.contains(ai_regex)] # filter df urls on ai_regex
-        except Exception as message:
-            with open("./errors/loading-errors.txt","a") as file:
-                file.write(f"Error reading {path}:\n{message}\n\n")
+    print(path)
+    counter += 1
+    print(f"file {counter} of {len_dir}",end="\r")
+    date, _ = path.split(".")
+    try:
+        df = pd.read_csv(f"{data_path}/{path}", names=header_list, sep="\t", low_memory=False) # read csv-file
+    except Exception as message:
+        with open("./errors/loading-errors.txt","a") as file:
+            file.write(f"Error reading {path}:\n{message}\n\n")
+    try:
+        df = df[df.SOURCEURL.str.contains(newspaper_regex)] # filter df urls on newspaper_regex
+    except Exception as message:
+        with open("./errors/loading-errors.txt","a") as file:
+            file.write(f"Error reading {path}:\n{message}\n\n")
+    try:
+        df1 = df[df.SOURCEURL.str.contains(ai_regex)] # filter df urls on ai_regex
+    except Exception as message:
+        with open("./errors/loading-errors.txt","a") as file:
+            file.write(f"Error reading {path}:\n{message}\n\n")
 
-        unique_urls = df1.SOURCEURL.unique()
+    unique_urls = df1.SOURCEURL.unique()
 
-        for index, url in enumerate(unique_urls):
-            headline, mainText = extract_content(url)
-            if headline:
-                matches = re.match(newspaper_regex, url)
-                newsPaper = matches.group()[12:]  # Extracting newspaper name from the URL
-                article_info = {
-                    "Date": date,
-                    "NewsPaper": newsPaper,
-                    "Headline": headline,
-                    "MainText": mainText
-                }
-                articles_data.append(article_info)  # Append each article's data to the list
+    for index, url in enumerate(unique_urls):
+        headline, mainText = extract_content(url)
+        if headline:
+            matches = re.match(newspaper_regex, url)
+            newsPaper = matches.group()[12:]  # Extracting newspaper name from the URL
+            article_info = {
+                "Date": date,
+                "NewsPaper": newsPaper,
+                "Headline": headline,
+                "MainText": mainText
+            }
+            articles_data.append(article_info)  # Append each article's data to the list
 
 # Creating DataFrame from the list of article data
-new_articles_df = pd.DataFrame(articles_data)
-old_articles_df = pd.read_csv("saved-files/extracted_articles_no_robots.csv")
-to_concat = [new_articles_df,old_articles_df]
-articles_df = pd.concat(to_concat)
-articles_df.to_csv("more_dates_extracted_articles.csv", index=False)
-print("Data saved to 'more_dates_extracted_articles.csv'.")
+articles_df = pd.DataFrame(articles_data)
+articles_df.to_csv("extracted_articles.csv", index=False)
+print("Data saved to 'extracted_articles.csv'.")

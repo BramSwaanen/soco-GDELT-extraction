@@ -2,7 +2,7 @@ import pandas as pd
 import random
 from datetime import datetime
 
-df = pd.read_csv("Google_output_with_sentiment_no_robots.csv")
+df = pd.read_csv("google_output_with_sentiment.csv")
 df['Date'] = pd.to_datetime(df['Date'], format='%Y%m%d')
 
 POSITIVE_CUTOFF = 0.5

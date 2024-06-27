@@ -3,7 +3,7 @@ from textblob import TextBlob
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 # Load CSV file
-df = pd.read_csv('outpu_cat_data.csv')
+df = pd.read_csv('output_cut_data.csv')
 
 # Initialize VADER analyzer
 analyzer = SentimentIntensityAnalyzer()
