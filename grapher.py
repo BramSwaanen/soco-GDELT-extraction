@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.dates as mdates
 
 
-file_path = "sentiment_by_textblob.csv"  
+file_path = "google_output_with_sentiment.csv"  
 data = pd.read_csv(file_path)
 
 # Get 'Month' and 'Year' columns
@@ -19,8 +19,8 @@ data['Year'] = pd.to_datetime(data['Year'], format='%Y')
 print(data.head())
 
 # Group by Date and NewsPaper and calculate mean of Sentiment_Score
-date_grouped_data = data.groupby(['Date', 'NewsPaper'])['TextBlob_Sentiment'].mean().unstack()
-month_grouped_data = data.groupby(['Month', 'NewsPaper'])['TextBlob_Sentiment'].mean().unstack()
+date_grouped_data = data.groupby(['Date', 'NewsPaper'])['Sentiment_Score'].mean().unstack()
+month_grouped_data = data.groupby(['Month', 'NewsPaper'])['Sentiment_Score'].mean().unstack()
 month_rolling_avg = month_grouped_data.rolling(window=6).mean()
 
 # Plotting
