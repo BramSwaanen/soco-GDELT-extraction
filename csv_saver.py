@@ -32,7 +32,7 @@ def extract_content(url:str):
 
 newspaper_regex = "https://www.(?:foxnews|cnn|cbsnews|nbcnews)"
 ai_regex = "-ai-|artificial-intelligence|gpt|natural-language-processing|chatbot|speech-recognition"
-data_path = "../../practice-data/extracted"
+data_path = "./data"
 
 # Extract the header row from headers.csv
 with open("headers.csv",'r') as file:
@@ -43,27 +43,26 @@ with open("headers.csv",'r') as file:
 d = {}
 articles_data = []  # List to collect all articles data for CSV export
 
-# Loop over all data files in ./data
+# Loop over all data files in data_path
 len_dir = len([i for i in os.listdir(data_path) if re.search(r"^202(0|1)",i)])
 counter = 0
 for path in os.listdir(data_path):
     if re.search(r"^202(0|1)",path):
-        print("path:", path)
         counter += 1
         print(f"file {counter} of {len_dir}",end="\r")
         date, _ = path.split(".")
         try:
-            df = pd.read_csv(f"{data_path}/{path}", names=header_list, sep="\t", low_memory=False)
+            df = pd.read_csv(f"{data_path}/{path}", names=header_list, sep="\t", low_memory=False) # read csv-file
         except Exception as message:
             with open("./errors/loading-errors.txt","a") as file:
                 file.write(f"Error reading {path}:\n{message}\n\n")
         try:
-            df = df[df.SOURCEURL.str.contains(newspaper_regex)]
+            df = df[df.SOURCEURL.str.contains(newspaper_regex)] # filter df urls on newspaper_regex
         except Exception as message:
             with open("./errors/loading-errors.txt","a") as file:
                 file.write(f"Error reading {path}:\n{message}\n\n")
         try:
-            df1 = df[df.SOURCEURL.str.contains(ai_regex)]
+            df1 = df[df.SOURCEURL.str.contains(ai_regex)] # filter df urls on ai_regex
         except Exception as message:
             with open("./errors/loading-errors.txt","a") as file:
                 file.write(f"Error reading {path}:\n{message}\n\n")

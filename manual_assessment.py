@@ -18,15 +18,15 @@ neutral = neutral[neutral.Sentiment_Score > NEGATIVE_CUTOFF]
 neutral_before = neutral[neutral.Date < DATE_CUTOFF]
 
 
-# print("************NEXT RUN*************")
-# print("MANUAL EVALUATION POSITIVE:")
-# indices = random.sample(range(len(positive)),SAMPLE_SIZE)
-# for i in indices:
-#     datapoint = positive.iloc[i]
-#     print(str(i) + ":")
-#     print("Sentiment score: ", datapoint.Sentiment_Score)
-#     print("Main text:", datapoint.MainText) 
-#     print() 
+print("************NEXT RUN*************")
+print("MANUAL EVALUATION POSITIVE:")
+indices = random.sample(range(len(positive)),SAMPLE_SIZE)
+for i in indices:
+    datapoint = positive.iloc[i]
+    print(str(i) + ":")
+    print("Sentiment score: ", datapoint.Sentiment_Score)
+    print("Main text:", datapoint.MainText) 
+    print() 
 
 print("MANUAL EVALUATION NEUTRAL BEFORE:")
 indices = random.sample(range(len(neutral_before)),SAMPLE_SIZE)
@@ -37,13 +37,13 @@ for i in indices:
     print("Main text:", datapoint.MainText) 
     print()  
 
-# print("MANUAL EVALUATION NEGATIVE:")
-# indices = random.sample(range(len(negative)),SAMPLE_SIZE)
-# for i in indices:
-#     datapoint = negative.iloc[i]
-#     print(str(i) + ":")
-#     print("Sentiment score: ", datapoint.Sentiment_Score)
-#     print("Main text:", datapoint.MainText) 
-#     print()  
+print("MANUAL EVALUATION NEGATIVE:")
+indices = random.sample(range(len(negative)),SAMPLE_SIZE)
+for i in indices:
+    datapoint = negative.iloc[i]
+    print(str(i) + ":")
+    print("Sentiment score: ", datapoint.Sentiment_Score)
+    print("Main text:", datapoint.MainText) 
+    print()  
 
 
