@@ -1,6 +1,6 @@
 # GDELT-extraction
 
-The code in this repo can be used to extract information about relevant events from relevant newspapers in GDELT data files. This is can be done by editing newspaper_regex and ai_regex regular expressions in csv_saver.py to the newspaper and subject of your choosing and then running
+The code in this repo can be used to extract information about relevant events from relevant newspapers in GDELT data files. This is can be done by putting the relevant GDELT csv files in the data folder, editing the newspaper_regex and ai_regex regular expressions in csv_saver.py to the newspaper and subject of your choosing and then running
 1. python csv_saver.py to extract the contents of relevant articles;
 2. python cut_data.py to reformat the article content strings for sentiment analysis;
 3. (i) python google_sentiment_analysis.py to have Google's api analyse the articles sentiment or (ii) python textblob_sentiment_analysis and then
