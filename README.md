@@ -4,4 +4,4 @@ The code in this repo can be used to extract information about relevant events f
 1. python csv_saver.py to extract the contents of relevant articles;
 2. python cut_data.py to reformat the article content strings for sentiment analysis;
 3. (i) python google_sentiment_analysis.py to have Google's api analyse the articles sentiment or (ii) python textblob_sentiment_analysis and then
-5. python grapher.py to create the articles' monthly average's rolling average per newspaper.
+4. python grapher.py to create and plot the articles' monthly average's rolling average per newspaper.
